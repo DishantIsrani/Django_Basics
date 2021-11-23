@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 9 main template</title>
+</head>
+<body>
+    <!-- This is a template by dishant
+    using the dict
+    {{name }} is from {{place}}  -->
+
+    <h1>Welcome to the text analyzer. Enter your text below</h1>
+    <form action='/analyze' method="post"> {% csrf_token %}
+        
+        <textarea name="text" id="" cols="30" rows="10" style="margin: 0px; width: 311px; height: 153px;"></textarea> <br>
+        <input type="checkbox" name="removepunc"> Remove punctuation <br>
+        <input type="checkbox" name="FullCaps"> UPPERCASE <br>
+        <input type="checkbox" name="newlineremover"> newlineremover <br>
+        <button type="submit">Analyze text</button>
+    </form>
+</body>
+</html>
